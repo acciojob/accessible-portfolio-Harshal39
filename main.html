@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Accessible Portfolio</title>
+ <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+ <header role="heading" aria-level="1">
+  <h1>My Accessible Portfolio</h1>
+ </header>
+ <nav role="navigation">
+  <ul role="list">
+   <li role="listitem"><a href="#about">About Me</a></li>
+   <li role="listitem"><a href="#projects">Projects</a></li>
+   <li role="listitem"><a href="#contact">Contact</a></li>
+  </ul>
+ </nav>
+ <main>
+  <img role="img" src="portrait.jpg" alt="A picture of me">
+  <p>
+   I am a software engineer with deep expertise in HTML. I provide detailed guidance, coding tips, and best practices for HTML structure and design.
+  </p>
+  <ul role="list">
+   <li role="listitem">Created an accessible portfolio using ARIA roles</li>
+   <li role="listitem">Implemented a responsive navigation bar</li>
+   <li role="listitem">Added alt attributes to all images for accessibility</li>
+  </ul>
+ </main>
 </body>
-
 </html>
